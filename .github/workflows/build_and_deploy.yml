@@ -19,8 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: building and setting docker environment on server
+      - name: build and setting docker environment on server
 
-      - run:
+        run:
           docker-compose -f ./docker-compose/docker-compose.yml -p mapbook_jb up --build -d
 
